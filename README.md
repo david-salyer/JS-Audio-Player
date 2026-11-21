@@ -19,7 +19,7 @@
 ### Chrome Web App Via Chrome OS
 
 1. Creating an offline compatible chrome web app proved to be a difficult undertaking, so a popout windows function was created to replicate the minimal layout desired.
-2. If you desire the integrated look of having an app icon, and super minimal window header, then you can create a web app to the online version located at [david-salyer.github.io/JS-Audio-Player](https://david-salyer.github.io/JS-Audio-Player/).  This will lose the flexibility of being able to use this application while not connected to the internet, and all customization that comes from having an editable .html file however.
+2. If you desire the integrated look of having an app icon, and super minimal window header, then you can create a web app to the online version located at [david-salyer.github.io/JS-Audio-Player](https://david-salyer.github.io/JS-Audio-Player/player).  This will lose the flexibility of being able to use this application while not connected to the internet, and all customization that comes from having an editable .html file however.
 3. Three Dots (Upper-Right) > Cast, save, and share > Create Shortcut (Does not work for local files- only websites.)
 
 ## Functionality
