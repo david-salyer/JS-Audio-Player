@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Audio Player</title>
+
+<!-- MEDIA CONTROLS ICON SOURCE: https://www.flaticon.com/authors/nawicon & https://www.flaticon.com/authors/anggara (with edits)-->
+<link id="favicon" rel="shortcut icon" type="image/png" href="assets/fav.png">
+
+<link rel="stylesheet" href="styles.css">
+
+</head><body>
+
+<input type="url" id="linkurl" name="" placeholder="Remote MP3 URL or Local MP3 File Path">
+<audio id="player" controls>
+ <source id="source" src="" type="audio/mp3">
+</audio>
+
+<div onclick="hideInst()" id="instructions">Please reduce window height until only bottom audio player controls are visible.</div>
+
+<button onclick="popoutPlayer()" id="newwinbutt">Popout View</button>
+<div id="showart" class="toggleart" onclick="showArt()" style="display:none;">&raquo; show album artwork for local files &laquo;</div>
+<div id="hideart" class="toggleart" onclick="hideArt()">&raquo; hide album artwork for local files &laquo;</div>
+
+<div id="browse">
+  <a href="#" target="_blank" class="white" id="browselink">&raquo; Browse Current File Directory &laquo;</a>
+</div>
+
+<div id="pause" class="button" onclick="togglePlay()"><img src="assets/pause.png"></div>
+<div id="play" class="button" onclick="togglePlay()"><img src="assets/play.png"></div>
+
+<div id="artwork">
+ <img id="art" src="" onerror="this.src='assets/art.jpg'">
+</div>
+
+<div id="progress">
+ <div class="text" id="passed"></div>
+ <div class="text" id="remaining"></div>
+ <div class="text" id="total"></div>
+ <div class="text" id="percent"></div>
+ <div id="progression"></div>
+</div>
+<div id="autoplay">
+ <div id="autoon" onclick="autoOff()" style="display:none;"><img src="assets/auto-on.png" width="50"></div>
+ <div id="autooff" onclick="autoOn()"><img src="assets/auto-off.png" width="50"></div>
+</div>
+<div id="speed" class="button">
+ <div id="speedtext">1x</div>
+ <div id="slower" class="button" onclick="slow()"></div>
+ <div id="faster" class="button" onclick="fast()"></div>
+ <div id="speedicons">
+  <div id="plus">+</div>
+  <div id="minus">-</div>
+ </div>
+</div>
+<div id="repeat" class="button" onclick="repeat()"><img src="assets/repeat.png"></div>
+
+<script src="script.js"></script>
+
+</body></html>
